@@ -1,0 +1,85 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.main-header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    color: #00bfa6;
+}
+
+.experience-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00bfa6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.experience-block {
+    margin-bottom: 2.5rem;
+    border-left: 4px solid #00bfa6;
+    padding-left: 1.5rem;
+    background: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.experience-block h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.experience-block h4 {
+    margin: 0 0 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-block p {
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #1f1f1f;
+    color: #ccc;
+}

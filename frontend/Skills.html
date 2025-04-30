@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Skills | Alon Aby</title>
+    <link rel="stylesheet" href="Skills.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="main-header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="Skills.html" class="active">Skills</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="skills-section">
+        <div class="container">
+            <h1>Technical Skills</h1>
+            <p class="subtitle">Languages, frameworks, and tools I work with</p>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Go</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML/CSS</li>
+                <li>C++</li>
+                <li>Git & GitHub</li>
+                <li>Docker</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Alon Aby</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

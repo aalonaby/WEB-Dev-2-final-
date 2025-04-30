@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Alon Aby</title>
+    <link rel="stylesheet" href="Exeperience.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="experience-section">
+        <div class="container">
+            <h1>Work Experience</h1>
+
+            <div class="experience-block">
+                <h2>Awesome Tech Inc.</h2>
+                <h4>Senior Developer <span>Jan 2020 – Present</span></h4>
+                <p>
+                    Lead developer for client-facing applications. Optimized performance, led code reviews, and mentored junior devs. Collaborated across teams to deliver scalable web solutions.
+                </p>
+            </div>
+
+            <div class="experience-block">
+                <h2>CodeCraft Studio</h2>
+                <h4>Frontend Developer <span>Aug 2018 – Dec 2019</span></h4>
+                <p>
+                    Designed and implemented responsive UI components using React. Worked closely with designers to translate wireframes into functional pages. Focused on performance and accessibility.
+                </p>
+            </div>
+
+            <div class="experience-block">
+                <h2>DevStart Labs</h2>
+                <h4>Intern Developer <span>May 2017 – Jul 2018</span></h4>
+                <p>
+                    Assisted in the development of internal tools and dashboards. Gained experience in RESTful APIs, Git workflows, and agile development practices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Alon Aby</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

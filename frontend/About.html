@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Alon Aby</title>
+    <link rel="stylesheet" href="About.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="Exeperience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hello! I'm <strong>Alon Aby</strong>, a software engineer passionate about building dynamic, user-friendly web applications and efficient backend systems. With a focus on clean code and usability, I bring a problem-solving mindset and an eagerness to learn the latest in tech.</p>
+
+            <p>My journey started with front-end development using HTML, CSS, and JavaScript, and soon expanded to full-stack capabilities with tools like React, Node.js, and Python. Whether it's optimizing performance or crafting sleek user interfaces, I take pride in delivering quality software.</p>
+
+            <h2>My Interests</h2>
+            <ul>
+                <li>Full-stack development</li>
+                <li>UI/UX design</li>
+                <li>Open-source contributions</li>
+                <li>Tech blogging & documentation</li>
+                <li>Mentoring junior developers</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Alon Aby</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

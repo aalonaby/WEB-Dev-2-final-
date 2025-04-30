@@ -1,236 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utility App SPA</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f9;
-        }
-
-        nav {
-            background-color: #333;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .form-container {
-            max-width: 400px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-container h2 {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .form-container input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .form-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .form-container button:hover {
-            background-color: #0056b3;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                margin: 5px 0;
-            }
-        }
-    </style>
+    <title>Alon Aby | Software Engineer</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <nav>
-        <a href="#" data-page="home">Home</a>
-        <a href="#" data-page="services">Services</a>
-        <a href="#" data-page="signup">Sign Up</a>
-        <a href="#" data-page="login">Login</a>
-    </nav>
-
-    <div id="content" class="container">
-        <!-- Home Page -->
-        <div id="home" class="page">
-            <h1>Welcome to the Utility App</h1>
-            <p>This app provides various utilities to enhance your productivity. Use the navigation bar to explore!</p>
-        </div>
-
-        <!-- Services Page -->
-        <div id="services" class="page hidden">
-            <h1>Our Services</h1>
-            <p>We offer a range of utility tools including task management, reminders, and more!</p>
-        </div>
-
-        <!-- Signup Page -->
-        <div id="signup" class="page hidden">
-            <div class="form-container">
-                <h2>Sign Up</h2>
-                <input type="text" id="signup-name" placeholder="Enter your name" required>
-                <input type="email" id="signup-email" placeholder="Enter your email" required>
-                <input type="password" id="signup-password" placeholder="Enter your password" required>
-                <button id="signup-btn">Sign Up</button>
-                <p id="signup-error" style="color: red; display: none;">Please fill in all fields.</p>
-            </div>
-        </div>
-
-        <!-- Login Page -->
-        <div id="login" class="page hidden">
-            <div class="form-container">
-                <h2>Login</h2>
-                <input type="email" id="login-email" placeholder="Enter your email" required>
-                <input type="password" id="login-password" placeholder="Enter your password" required>
-                <button id="login-btn">Login</button>
-                <p id="login-error" style="color: red; display: none;">Invalid email or password.</p>
-            </div>
-        </div>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
 
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <nav>
+            <ul id="menu" class="shadow">
+                <li><a href="About.html">About</a></li>
+                <li><a href="Exeperience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="lead">
+        <div id="lead-content">
+            <h1>Alon Aby</h1>
+            <h2>Software Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <div id="lead-overlay"></div>
+        <div id="lead-down">
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Passionate software engineer with experience in full-stack development, building responsive web applications, and solving complex technical problems. I enjoy creating clean and scalable code while constantly learning new technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="background-alt">
+        <div class="container">
+            <h2 class="heading">Experience</h2>
+            <div id="experience-timeline">
+                <!-- Repeat for each job -->
+                <div data-date="Jan 2020 – Present">
+                    <h3>Awesome Tech Inc.</h3>
+                    <h4>Senior Developer</h4>
+                    <p>
+                        Lead developer for client-facing applications. Optimized performance, led code reviews, and mentored junior devs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="heading">Education</h2>
+            <div class="education-block">
+                <h3>University of Ottawa</h3>
+                <span class="education-date">Sept 2016 - Sept 2017</span>
+                <h4>B.Sc. in Computer Science</h4>
+                <p>
+                    Studied algorithms, data structures, and software design principles. Participated in coding competitions and capstone projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="background-alt">
+        <div class="container">
+            <h2 class="heading">Projects</h2>
+            <div class="row">
+                <!-- Repeat for each project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/website-design-preview-220636.jpg" alt="Project Screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>
+                            A personal portfolio built with HTML, CSS, and JavaScript. Fully responsive and SEO optimized.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="heading">Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Go</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML/CSS</li>
+                <li>C++</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" method="POST" action="https://formspree.io/f/your-id">
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>&copy; <span id="current-year"></span> Ryan Fitzgerald</p>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <ul class="social-icons">
+                        <li><a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Navigation functionality
-        const pages = document.querySelectorAll('.page');
-        const navLinks = document.querySelectorAll('nav a');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                const targetPage = link.getAttribute('data-page');
-
-                pages.forEach(page => page.classList.add('hidden'));
-                document.getElementById(targetPage).classList.remove('hidden');
-            });
-        });
-
-       // Signup Functionality
-document.getElementById('signup-btn').addEventListener('click', async () => {
-    const name = document.getElementById('signup-name').value.trim();
-    const email = document.getElementById('signup-email').value.trim();
-    const password = document.getElementById('signup-password').value.trim();
-    const error = document.getElementById('signup-error');
-
-    if (name && email && password) {
-        try {
-            const response = await fetch('http://localhost:4000/api/user/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, email, password }),
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                alert('Sign Up Successful! Redirecting to Login page...');
-                error.style.display = 'none';
-                document.getElementById('signup').classList.add('hidden');
-                document.getElementById('login').classList.remove('hidden');
-            } else {
-                error.textContent = data.message || 'Sign Up Failed!';
-                error.style.display = 'block';
-            }
-        } catch (err) {
-            error.textContent = 'An error occurred. Please try again later.';
-            error.style.display = 'block';
-        }
-    } else {
-        error.textContent = 'All fields are required!';
-        error.style.display = 'block';
-    }
-});
-
-// Login Functionality
-document.getElementById('login-btn').addEventListener('click', async () => {
-    const email = document.getElementById('login-email').value.trim();
-    const password = document.getElementById('login-password').value.trim();
-    const error = document.getElementById('login-error');
-
-    if (email && password) {
-        try {
-            const response = await fetch('http://localhost:4000/api/user/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, password }),
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                alert(`Welcome back, ${data.user.name}!`);
-                error.style.display = 'none';
-                localStorage.setItem('user', JSON.stringify(data));
-
-                // Redirect to the home page
-                document.querySelectorAll('.page').forEach(page => page.classList.add('hidden'));
-                document.getElementById('home').classList.remove('hidden');
-            } else {
-                error.textContent = data.message || 'Invalid email or password.';
-                error.style.display = 'block';
-            }
-        } catch (err) {
-            error.textContent = 'An error occurred. Please try again later.';
-            error.style.display = 'block';
-        }
-    } else {
-        error.textContent = 'All fields are required!';
-        error.style.display = 'block';
-    }
-});
-
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
